@@ -1,0 +1,583 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  
+}
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  width: 768px;
+  height: 594px;
+  background-color: white;
+  border-radius: 20px;
+  border-bottom-right-radius: 25%;
+  
+  /*position: absolute;*/
+}
+
+.dates {
+  width: 400px;
+  height: 70px;
+  display: flex;
+  margin-left: 63px;
+  justify-content: left;
+  align-items: center;
+  color: grey;
+}
+
+.dates p {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#lmonth {
+  margin-left: 145px;
+}
+
+#lyear {
+  margin-left: 121px;
+}
+
+.alerts {
+  margin-left: 63px;
+  width: 637px;
+  height: 45px;
+  display: flex;
+  margin-top: 6px;
+  justify-content: left;
+  align-items: top;
+  font-size: 14px;
+}
+
+.alerts2 {
+  width: 700px;
+  height: 45px;
+  display: none;
+  margin-left: 63px;
+  margin-top: 6px;
+  justify-content: left;
+  align-items: top;
+  font-size: 14px;
+}
+
+.req {
+  font-size: 12px;
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.req2 {
+  margin-left: 54px;
+  font-size: 12px;
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.req3 {
+  margin-left: 55px;
+  font-size: 12px;
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.req4 {
+  font-size: 12px;
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.req5 {
+  margin-left: 54px;
+  font-size: 12px;
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.req6 {
+  margin-left: 41px;
+  font-size: 12px;
+  color: red;
+  display: none;
+  font-style: italic;
+  text-align: center;
+
+}
+
+#subform {
+  width: 470px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 63px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.form {
+  width: 90px;
+}
+
+input {
+  width: 120px;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+input::placeholder {
+  color: lightgrey;
+  text-align: center;
+}
+
+input:focus {
+  display: block;
+  border: 1px solid hsl(259, 100%, 65%);
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+#line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 570px;
+  border: solid 1px rgb(233, 233, 233);
+  margin-left: 63px;
+}
+
+#button {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  background-image: url(icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  cursor: pointer;
+  color: transparent;
+}
+
+#button {
+  position: relative;
+  top: -40px;
+  left: 630px;
+}
+
+#button:active {
+  background-color: black;
+}
+
+.display {
+  /*background: orange;*/
+  height: auto;
+  line-height: 102px;
+  margin-left: 63px;
+  margin-top: -40px;
+}
+
+.currage {
+  display: flex;
+  height: auto;
+  width: auto;
+  font-size: 92px;
+  font-weight: 800;
+  color: hsl(259, 100%, 65%);
+}
+
+.currage p {
+  color: rgb(0, 0, 0);
+  margin-left: 12px;
+}
+
+.years,
+.months,
+.days {
+  font-style: italic;
+}
+
+
+
+@media (max-width: 780px) {
+  .container {
+    width: 540px;
+  }
+
+  #subform {
+    width: 360px;
+  }
+
+  input {
+    width: 85px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .dates {
+    width: 275px;
+  }
+
+  #lmonth {
+    margin-left: 108px;
+  }
+
+  #lyear {
+    margin-left: 84px;
+  }
+
+  hr {
+    width: 400px;
+    margin-top: 27px;
+  }
+
+  #button {
+    position: relative;
+    top: -30px;
+    left: 230px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .currage {
+    font-size: 72px;
+  }
+
+  .display {
+    line-height: 90px;
+    margin-top: 0px;
+  }
+
+  .req {
+    font-size: 10px;
+    color: red;
+    display: none;
+    font-style: italic;
+    margin-left: -8px;
+
+  }
+
+  .req2 {
+    margin-left: 37px;
+    font-size: 10px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req3 {
+    margin-left: 38px;
+    font-size: 10px;
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+
+  .req4 {
+    font-size: 11px;
+    color: red;
+    display: none;
+    font-style: italic;
+    margin-left: -8px;
+
+  }
+
+  .req5 {
+    margin-left: 28px;
+    font-size: 10px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req6 {
+    margin-left: 29px;
+    font-size: 10px;
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+  .alerts, .alerts2 {
+    width: 430px;
+  }
+}
+
+
+
+@media (max-width: 580px) {
+  .container {
+    width: 360px;
+  }
+
+  #subform {
+    width: 240px;
+    margin-left: 57px;
+  }
+
+  input {
+    width: 64px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .dates {
+    width: 260px;
+  }
+
+  #lday {
+    margin-left: 12px;
+  }
+
+  #lmonth {
+    margin-left: 44px;
+  }
+
+  #lyear {
+    margin-left: 41px;
+  }
+
+  hr {
+    width: 300px;
+    margin-top: 17px;
+    margin-left: 27px;
+  }
+
+  #button {
+    position: relative;
+    top: -30px;
+    left: 145px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .currage {
+    font-size: 52px;
+  }
+
+  .display {
+    line-height: 70px;
+    margin-left: 32px;
+  }
+
+  .req {
+    margin-left: 0px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req2 {
+    margin-left: 10px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req3 {
+    margin-left: 9px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+
+  .req4 {
+    margin-left: 0px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req5 {
+    margin-left: 8px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req6 {
+    margin-left: 6px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+
+  input::placeholder {
+    font-size: 16px;
+  }
+
+  .alerts, .alerts2 {
+    width: 250px;
+    margin-left: 50px;
+  }
+}
+
+
+
+@media (max-width: 380px) {
+  .container {
+    width: 330px;
+  }
+
+  section {
+    width: auto;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+  }
+
+  body {
+    width: 380px;
+    height: auto;
+  }
+
+  #subform {
+    margin-left: 42px;
+  }
+
+  #lday {
+    margin-left: -2px;
+  }
+
+  #lmonth {
+    margin-left: 44px;
+  }
+
+  #lyear {
+    margin-left: 43px;
+  }
+
+  hr {
+    width: 300px;
+    margin-top: 17px;
+    margin-left: 13px;
+  }
+
+  #button {
+    position: relative;
+    top: -30px;
+    left: 130px;
+    width: 60px;
+    height: 60px;
+  }
+
+  input {
+    width: 64px;
+  }
+
+  .req {
+    margin-left: 0px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req2 {
+    margin-left: 8px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req3 {
+    margin-left: 9px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+
+  .req4 {
+    margin-left: 0px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req5 {
+    margin-left: 8px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+
+  }
+
+  .req6 {
+    margin-left: 5px;
+    font-size: 8px;
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+
+  .currage {
+    font-size: 46px;
+    line-height: 52px;
+  }
+  .alerts, .alerts2 {
+    width: 240px;
+    margin-left: 40px;
+  }
+
+}

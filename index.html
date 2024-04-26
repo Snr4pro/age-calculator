@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <section>
+  <div class="container">
+    <div class="dates"><p id="lday">Day</p><p id="lmonth">Month</p><p id="lyear">Year</p></div>
+      <div class="form">
+        <form id="subform">
+          <input type="text" class="input" id="day" placeholder="DD" minlength="1" maxlength="2" required>
+          <input type="text" class="input2" id="month" placeholder="MM" minlength="1" maxlength="2" required>
+          <input type="text" class="input3" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
+        </form>
+        <div class="alerts"><p class="req"></p><p class="req2"></p><p class="req3"></p></div>
+        <div class="alerts2"><p class="req4"></p><p class="req5"></p><p class="req6"></p></div>
+        <hr>
+        <button id="button" onclick="getDates()"></button>
+      </div>
+    
+    <div class="display">
+      <div class="currage">
+        <div class="years"><i>- -</i></div>
+        <i>
+          <p>years</p>
+        </i>
+      </div>
+      <div class="currage">
+        <div class="months"><i>- -</i></div>
+        <i>
+          <p>months</p>
+        </i>
+      </div>
+      <div class="currage">
+        <div class="days"><i>- -</i></div>
+        <i>
+          <p>days</p>
+        </i>
+      </div>
+    </div>
+  </div>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>
